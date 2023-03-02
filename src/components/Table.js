@@ -117,9 +117,11 @@ export default function Table() {
   }, []);
   useEffect(() => {
     slicingData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, searchedData]);
   useEffect(() => {
     searchHandler(searchText);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchText, fetchedData]);
 
   return (
