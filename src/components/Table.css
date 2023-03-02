@@ -1,0 +1,121 @@
+.parentContainer {
+  margin: 0 auto 0 auto;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.searchBarContainer input {
+  width: 100%;
+  margin: 2px 0;
+  border: 1px solid grey;
+  height: 24px;
+  padding: 0px 16px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+#tableContainer {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: darkslategray;
+}
+#tableContainer thead {
+  background: linear-gradient(
+    359deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(92, 9, 94, 1) 65%
+  );
+}
+
+#tableContainer td {
+  /* border: 1px solid #ddd; */
+  padding: 10px;
+}
+
+#tableContainer tr:nth-child(even) {
+  background-color: #3d003e0f;
+}
+
+#tableContainer tr:hover {
+  /* background-color: #ddd; */
+  background-color: #0775ff24;
+}
+
+#tableContainer th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: white;
+}
+tbody td:last-child span,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+tbody td input[type="text"] {
+  text-align: center;
+  width: auto;
+  background: transparent;
+  font-size: 15px;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12px;
+}
+.paginationContainer span {
+  padding: 3px;
+  width: 32px;
+  border-radius: 32px;
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 4px;
+  color: white;
+  background: darkorchid;
+  cursor: pointer;
+  align-items: center;
+}
+.paginationContainer span:hover {
+  color: white;
+  background: rgb(139, 180, 255);
+}
+.pagination_Active {
+  color: cornflowerblue !important;
+  background: white !important ;
+  border: 2px dashed cornflowerblue;
+  font-size: 18px;
+}
+.pagination_Disable {
+  color: white !important;
+  background: lightgray !important ;
+  /* border: 2px dashed cornflowerblue; */
+  /* font-size: 18px; */
+}
+.selected_Row{
+  background-color: #a9a9a9a6 !important;
+}
+button {
+  background: red;
+  color: white;
+  width: fit-content;
+  border: none;
+  border-radius: 23px;
+  padding: 11px;
+  margin: 8px 0;
+  box-shadow: 3px 4px 3px lightcoral;
+  cursor: pointer;
+  opacity: 0.7;
+}
+button:active
+{
+opacity: 1;
+box-shadow: none;
+}
+button:hover
+{
+  opacity: 1;
+}
